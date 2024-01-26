@@ -163,8 +163,6 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
-NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
-
 SOCIAL_AUTH_FACEBOOK_KEY = '635961334948617'  # App ID
 SOCIAL_AUTH_FACEBOOK_SECRET = '024c447465fcdadd78c976270a4bbb09'  # App Secret
 
