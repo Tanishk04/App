@@ -1,4 +1,5 @@
 {% extends 'base.html' %} 
+{% load static %}
 
 {% block title %}Home{% endblock title %} 
 
@@ -23,11 +24,13 @@
           </div>
         </nav>
     
-        <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%; background-image: url('https://i.ibb.co/4VvSpLj/heroimage.jpg'); height: 500px;"></div>
+        {% comment %} <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%; background-image: url('{% static "Home/images/front.png" %}'); height: 500px;"></div> {% endcomment %}
+        <div class="relative overflow-hidden bg-no-repeat bg-cover w-screen h-screen" style="background-position: center; background-image: url('{% static "Home/images/front.png" %}');"></div>
+
     
         <div class="container mx-auto px-6 md:px-12 xl:px-32">
           <div class="text-center text-gray-800">
-            <div class="block rounded-lg shadow-lg px-6 py-12 md:py-16 md:px-12" style="margin-top: -170px; background: hsla(0, 0%, 100%, 0.7); backdrop-filter: blur(30px);">
+            <div class="block rounded-lg shadow-lg px-3 py-12 md:py-16 md:px-12" style="margin-top: -170px; background: hsla(0, 0%, 100%, 0.7); backdrop-filter: blur(50px);">
               <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12">The best in <span class="text-blue-600">town</span></h1>
               <a href="login/" class="inline-block px-7 py-3 mb-2 md:mb-0 mr-0 md:mr-2 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#!" role="button">Reserve</a>
             </div>

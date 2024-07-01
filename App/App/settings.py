@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-vdom)gh%1b*h^ntbddctd!r^&a2_)u_@h)13h&b3g!$$4vu4@#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["18.209.174.199"]
+ALLOWED_HOSTS = ["127.0.0.1"]
 
 
 # Application definition
@@ -151,8 +151,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
-
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [BASE_DIR / "static"]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
@@ -166,4 +166,4 @@ INTERNAL_IPS = [
 SOCIAL_AUTH_FACEBOOK_KEY = '635961334948617'  # App ID
 SOCIAL_AUTH_FACEBOOK_SECRET = '024c447465fcdadd78c976270a4bbb09'  # App Secret
 
-NPM_BIN_PATH = r'/usr/bin/node'
+NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
