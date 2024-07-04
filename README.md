@@ -5,7 +5,6 @@ MyClinic is a robust appointment scheduling system developed to enable patients 
 
 ### Project Details
 - **Project Name**: MyClinic
-- **Deployment Date**: October 2023
 - **Tech Stack**: Django, Tailwind CSS
 - **Deployment Platform**: AWS EC2
 
